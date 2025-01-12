@@ -1,0 +1,122 @@
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    min-width: 320px;
+    position: relative;
+}
+
+.timer {
+    font-size: 4.5rem;
+    margin: 1.5rem 0;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.controls button {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    background-color: #0180FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.controls button:hover {
+    background-color: #0066cc;
+    transform: translateY(-1px);
+}
+
+.controls button.secondary {
+    background-color: #f1f1f1;
+    color: #666666;
+}
+
+.controls button.secondary:hover {
+    background-color: #e5e5e5;
+}
+
+/* .controls button[data-state="paused"] {
+    background-color: #f0e6ff;
+    border: 2px solid #6100FF;
+    color: #6100FF;
+    padding: calc(0.75rem - 2px) calc(1.5rem - 2px);
+}
+
+.controls button[data-state="paused"]:hover {
+    background-color: #e6d9ff;
+    transform: translateY(-1px);
+} */
+
+.mode {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.mode-toggle {
+    font-family: 'Inter', sans-serif;
+    padding: 0.75rem;
+    border: 1.5px solid #e5e5e5;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    color: #666666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.mode-toggle.work {
+    border-color: #0180FF;
+    color: #0180FF;
+}
+
+.mode-toggle.break {
+    border-color: #ff7043;
+    color: #ff7043;
+}
+
+.mode-container {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.page-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+} 
